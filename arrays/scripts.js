@@ -123,3 +123,17 @@ for (const product of products) {
 }
 
 console.log(`Total: $${total.toFixed(2)}`)
+
+const birds2 = ['Parrots', 'Falcons', 'Eagles', 'Emus', 'Caracaras', 'Egrets']
+
+console.log(birds2.indexOf('Eagles'))
+const newArray = birds2.slice(2, 4)
+console.log(newArray)
+
+const numb = [0, 1, 2, 3, 4]
+
+const reducedNumer = numb.reduce(function (acumulator, currentIndex) {
+  return acumulator + currentIndex
+})
+
+console.log(reducedNumer)
