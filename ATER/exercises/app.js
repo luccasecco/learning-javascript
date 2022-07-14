@@ -105,9 +105,7 @@ const cart = [
   { name: 'Death Stranding', price: 149.99 }
 ]
 
-const productList = cart.reduce((acc, product) => {
-  return `${acc}- ${product.name}\n`
-}, '')
+const productList = cart.reduce((acc, { name }) => `${acc}- ${name}\n`, '')
 
 /*
 - Nome 1
